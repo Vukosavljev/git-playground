@@ -19,7 +19,7 @@ Widget.prototype.render = function($where) {
 // CHILD CLASS
 function Button(widht, height, label) {
   Widget.call(this, widht, height);
-  this.label = labelj;
+  this.label = label;
 
   this.$elem = $('<button>').text(this.label);
 }
@@ -36,6 +36,7 @@ Button.prototype.onClick = function(event) {
     console.log(`Button ${this.label} clicked!`)
 }
 
+// For rendering only
 $(document).ready( function() {
     const $body = $(document.body);
     const btn1 = new Button(120, 20, 'Hello');
