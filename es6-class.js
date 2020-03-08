@@ -25,7 +25,7 @@ class Button extends Widget {
   }
 
   render($where) {
-    super.render();
+    super.render($where);
     this.elem$.click(this.onClick.bind(this));
   }
 
