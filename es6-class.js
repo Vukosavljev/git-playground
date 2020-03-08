@@ -19,9 +19,9 @@ class Widget {
 
 class Button extends Widget {
   constructor(widht, height, label) {
-    this.widht = widht;
-    this.height = height;
+    super(widht, height);
     this.label = label;
+    this.$elem = $('<button>').text(this.label);
   }
 
   render($where) {
